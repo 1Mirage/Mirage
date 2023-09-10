@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Internal CSS</title>
+    <style>
+        img{
+            width: 50%;
+            border: 2px solid red;
+            border-radius: 50%;
+            
+        }
+
+        .img-div{
+            text-align: center;
+        }
+
+        /* id */
+        #p1800{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+   * Inline CSS, HTML elementlerine style keyword'u ile eklenir.
+   * style kelimesinin ici aslinda CSS alanidir.
+   * Sadece eklenen element icin bir stillendirme gerceklestirir.
+   * Bu sebeple cok pratik bir yontem degildir.
+   * HTML kodlarini kalabaliklastirdigi icin kodun gorunumunu karmasiklastirir.
+    -->
+
+    <!--isimlendirme = propery:volue
+                        özellik:değer
+                        color:red-->
+    <h1 style="color:red; text-align: center;">USING CSS</h1>
+    <H2 style="color: blue;">Lorem, ipsum dolor.</H2>
+
+    <div class="">
+        <img src="https://www.motortrend.com/uploads/2022/07/2022-Volvo-P1800-Cyan-Racing-001.jpg?w=500" alt="">
+    </div>
+    <div class="img-div">
+        <img src="https://www.motortrend.com/uploads/2022/07/2022-Volvo-P1800-Cyan-Racing-033.jpg?fit=around%7C875:492" alt="">
+    </div>
+    <div id="p1800">
+        <img src="https://www.motortrend.com/uploads/2022/07/2022-Volvo-P1800-Cyan-Racing-047.jpg?fit=around%7C875:492" alt="">
+    </div>
+</body>
+</html>
