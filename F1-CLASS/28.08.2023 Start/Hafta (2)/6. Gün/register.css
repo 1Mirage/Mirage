@@ -1,0 +1,46 @@
+*{
+    /** resetleme*/
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    /* background-color: aquamarine; */
+}
+
+form{
+    background-color: blanchedalmond;
+    width:fit-content;
+    margin:20px auto 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*! label inline elementtir. Dolayisiyla width property'si dogrudan calismaz */
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+.gender-div, 
+.lang-div{
+    display: inline-block;
+}
+
+.gender-div label,
+.lang-div label{
+width: auto;
+margin-right: 10px;
+}
+
+
+
+
