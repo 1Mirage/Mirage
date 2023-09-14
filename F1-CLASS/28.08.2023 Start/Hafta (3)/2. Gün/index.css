@@ -1,0 +1,127 @@
+/**Resetting*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*----HEADER----*/
+
+header{
+    padding: 20px;
+    line-height: 36px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    color: black;
+    padding: 0.5rem;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+}
+
+.header__left{
+    float: left;
+}
+
+.header__right{
+    float: right;
+}
+
+.header__right--appicon{
+    opacity: 0.5;
+    vertical-align: middle;
+}
+
+.header__right--appicon:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.header__right--button{
+    background-color: #4285F4;
+    color: white;
+    height: 30px;
+    width: 70px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*------MAIN------*/
+.main{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.main__logo{
+    height: 95px;
+    width: 272px;
+}
+
+.main__searchbar{
+    border: 1px solid #d3d3d3;
+    height: 38px;
+    width: 460px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding-top: 3px;
+}
+
+.main__searchbar:hover{
+    box-shadow: rgb(211, 211, 211) 3px 3px 5px 0px;
+}
+
+.main__searchbar--magnifier{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.main__searchbar--input{
+    height: 25px;
+    width: 350px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    vertical-align: middle;
+}
+
+.main__searchbar--microphone{
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.main__buttons--left,
+.main__buttons--right{
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 3px 10px 3px;
+    padding: 1px 6px 1px 6px;
+}
+
+.main__buttons--left:hover,
+.main__buttons--right:hover{
+    cursor: pointer;
+    border: 1px solid #d3d3d3;
+}
+
+.main__lang{
+    margin-top: 20px;
+}
+
