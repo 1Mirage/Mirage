@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    padding: 2rem;
+
+}
+
+ul{
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 0.5rem;
+
+}
+
+ul li{
+    background-color: tomato;
+    padding: 0.5rem;
+
+}
