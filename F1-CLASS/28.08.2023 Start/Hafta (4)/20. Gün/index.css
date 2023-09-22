@@ -104,3 +104,144 @@ footer {
   height: 150px;
   padding: 20px;
 }
+
+.secr a {
+  transition: 2s;
+}
+
+.secr a.a1:hover {
+  transform: rotateX(360deg);
+}
+
+.secr a.a2:hover {
+  transform: rotateY(360deg);
+}
+
+.secr a.a3:hover {
+  transform: rotateZ(3600deg);
+}
+
+.nav h1:hover {
+  animation-name: example11;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example11 {
+  0% {
+    transform: scale(1);
+  }
+
+  12.5% {
+    transform: scale(0.5);
+  }
+
+  25% {
+    transform: scale(2);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+}
+
+.main h3:hover {
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+}
+
+@keyframes example2 {
+  0% {
+    color: red;
+  }
+
+  25% {
+    color: yellow;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  75% {
+    color: green;
+  }
+
+  100% {
+    color: red;
+  }
+}
+
+.downr button:hover {
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(2);
+  }
+
+  12.5% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(2);
+  }
+
+  37.5% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(2);
+  }
+}
+
+/* Hover durumundayken animasyonu uygula */
+.main img:hover {
+  animation: hoverEffect 1s ease-in-out forwards;
+  /* 
+  forwards: Animasyon sona erdiğinde son durumu korur
+  0.5s: Animasyon süresi (ayarlayabilirsiniz)
+  ease-in-out: Animasyon hız eğrisi
+  */
+}
+
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1);
+    /* Normal boyut */
+  }
+
+  25% {
+    transform: scale(2) translateX(-30px);
+    /* Yukarı büyüme ve sola kayma */
+  }
+
+  50% {
+    transform: scale(2) translateY(30px);
+    /* Aşağı büyüme ve sağa kayma */
+  }
+
+  75% {
+    transform: scale(2) translateX(30px);
+    /* Sağa büyüme ve sola kayma */
+  }
+
+  100% {
+    transform: scale(2) translateY(-30px);
+    /* Normal boyuta dönme */
+  }
+}
