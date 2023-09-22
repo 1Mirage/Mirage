@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav1 {
+  background-color: darkslategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  height: 70px;
+  border-bottom: 9px solid rgb(163, 57, 92);
+  padding: 1rem;
+}
+
+.nav1 .secl h2 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+span {
+  color: purple;
+}
+
+.secr a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+
+.nav2 {
+  background-image: url(./img/showcase.jpg);
+  height: 400;
+  background-position: center;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 150px 0;
+  width: 700;
+  color: aliceblue;
+}
+
+.nav2 h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  letter-spacing: 7px;
+  font-weight: 900;
+}
+
+.nav2 p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.nav3 {
+  background-color: darkslategray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: aliceblue;
+  height: 70px;
+  padding: 1rem;
+}
+
+.downr button {
+  color: aliceblue;
+  background-color: red;
+  height: 40px;
+  width: 130px;
+}
+
+.downr input {
+  width: 250px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+}
+
+.main {
+  text-align: center;
+}
+
+.main img {
+  width: 100px;
+}
+
+footer {
+  background-image: url(./img/clarusway_logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  background-color: darkslategrey;
+  font-size: 20px;
+  color: aliceblue;
+  height: 150px;
+  padding: 20px;
+}
