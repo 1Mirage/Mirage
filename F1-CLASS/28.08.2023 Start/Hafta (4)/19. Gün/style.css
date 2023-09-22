@@ -10,17 +10,16 @@ body {
 
 header {
   display: flex;
-  background-color: black;
+  background-color: #000;
   padding: 1.5rem;
   color: white;
   font-size: 1.2rem;
   align-items: center;
   justify-content: space-around;
-
 }
 
 nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -56,7 +55,7 @@ nav.center {
 }
 
 .left a {
-  transition: 2s
+  transition: 2s;
 }
 
 .left a.a:hover {
@@ -82,11 +81,11 @@ nav.center {
     transform: scale(1);
   }
 
-  25% {
+  12.5% {
     transform: scale(0.5);
   }
 
-  50% {
+  25% {
     transform: scale(2);
   }
 
@@ -114,11 +113,19 @@ nav.center {
     transform: scale(2);
   }
 
-  50% {
+  37.5% {
     transform: scale(1);
   }
 
+  50% {
+    transform: scale(2);
+  }
+
   75% {
+    transform: scale(1);
+  }
+
+  100% {
     transform: scale(2);
   }
 }
@@ -160,17 +167,17 @@ nav.center {
 @keyframes example3 {
   0% {
     background-color: #fff;
-    color: #000
+    color: #000;
   }
 
   50% {
     background-color: #000;
-    color: #fff
+    color: #fff;
   }
 
   100% {
     background-color: #fff;
-    color: #000
+    color: #000;
   }
 }
 
@@ -183,4 +190,104 @@ nav.center {
   padding: 0.3rem;
   background-color: red;
   border-radius: 50%;
+}
+
+main section {
+  padding: 2rem;
+  text-align: justify;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  font-size: 1.2rem 7rem;
+  padding: 1.5rem;
+}
+
+footer section {
+  flex: 1;
+}
+
+section p {
+  text-align: justify;
+}
+
+footer section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+section span {
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  nav.right a {
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  nav.right a.f {
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav.right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav.right section a {
+    padding-left: 3rem;
+  }
+
+  nav.right section {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav.right a.f {
+    padding-left: 2.5rem;
+  }
+
+  footer {
+    display: flex;
+  }
+
+  footer section.footer1 {
+    width: 100%;
+  }
+
+  section,
+  section span,
+  section a {
+    text-align: center;
+  }
 }
