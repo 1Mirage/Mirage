@@ -68,7 +68,8 @@ span {
 
 .downr button {
   color: aliceblue;
-  background-color: red;
+  background-color: crimson;
+  border-radius: 5px;
   height: 40px;
   width: 130px;
 }
@@ -305,4 +306,47 @@ footer {
   text-align: justify;
   height: fit-content;
   width: 30vw;
+}
+
+.main_s {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
+}
+
+.service_p {
+  text-align: justify;
+  height: fit-content;
+  width: 60vw;
+}
+
+.service_s {
+  background-color: lightgrey;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.service_r {
+  color: aliceblue;
+  background-color: darkslategray;
+  width: fit-content;
+  padding: 10px;
+}
+
+.div_send {
+  text-align: left;
+}
+
+.div_send button {
+  color: aliceblue;
+  background-color: crimson;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.service_r input {
+  width: 100%;
 }
