@@ -80,16 +80,19 @@ span {
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px;
-  gap: 20px;
-  height: 300px;
+  gap: 10rem;
+  height: 70vh;
 }
 
 .main {
   text-align: center;
+}
 
+main section {
+  width: 400px;
 }
 
 .main img {
@@ -120,7 +123,6 @@ footer {
   transition: transform 0.3s ease-in-out;
   /* Dönme animasyonu için geçiş efekti eklenir */
 }
-
 
 .secr a.a1:hover {
   transform: rotateX(360deg);
@@ -225,7 +227,7 @@ footer {
 
 /* Hover durumundayken animasyonu uygula */
 .main img:hover {
-  animation: hoverEffect 1s ease-in-out forwards;
+  animation: hoverEffect 1.5s ease-in-out forwards;
   /* 
   forwards: Animasyon sona erdiğinde son durumu korur
   0.5s: Animasyon süresi (ayarlayabilirsiniz)
