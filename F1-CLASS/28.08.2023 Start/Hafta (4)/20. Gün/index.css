@@ -109,8 +109,18 @@ footer {
 }
 
 .secr a {
-  transition: 2s;
+  display: inline-block;
+  /* Bu özellik linklere blok seviyesi davranış kazandırır */
+  text-decoration: none;
+  /* Link altı çizgisi kaldırılır */
+  margin: 10px;
+  /* Linkler arasında boşluk eklenir */
+  padding: 10px 20px;
+  /* Linklerin iç içe olduğu daha büyük bir alan eklenir */
+  transition: transform 0.3s ease-in-out;
+  /* Dönme animasyonu için geçiş efekti eklenir */
 }
+
 
 .secr a.a1:hover {
   transform: rotateX(360deg);
@@ -121,7 +131,8 @@ footer {
 }
 
 .secr a.a3:hover {
-  transform: rotateZ(3600deg);
+  transform: rotateZ(360deg);
+  /* 3600 değeri yerine 360 kullanın */
 }
 
 .nav h1:hover {
@@ -228,23 +239,43 @@ footer {
     /* Normal boyut */
   }
 
-  25% {
+  12.5% {
     transform: scale(2) translateX(-30px);
     /* Yukarı büyüme ve sola kayma */
   }
 
-  50% {
-    transform: scale(2) translateY(30px);
+  25% {
+    transform: scale(1);
+    /* Normal boyut */
+  }
+
+  37.5% {
+    transform: scale(2) translateX(30px);
     /* Aşağı büyüme ve sağa kayma */
   }
 
-  75% {
-    transform: scale(2) translateX(30px);
+  50% {
+    transform: scale(1);
+    /* Normal boyut */
+  }
+
+  62.5% {
+    transform: scale(2) translateY(30px);
     /* Sağa büyüme ve sola kayma */
   }
 
-  100% {
+  75% {
+    transform: scale(1);
+    /* Normal boyut */
+  }
+
+  87.5% {
     transform: scale(2) translateY(-30px);
     /* Normal boyuta dönme */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Normal boyut */
   }
 }
