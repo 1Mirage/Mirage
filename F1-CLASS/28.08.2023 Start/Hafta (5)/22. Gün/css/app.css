@@ -22,7 +22,7 @@
 /*! ------------- 2- CAROUSEL --------------- */
 
 .carousel-item {
-    max-height: calc(100vh-125px);
+    max-height: calc(100vh - 125px);
 }
 
 
