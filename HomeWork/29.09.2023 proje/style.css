@@ -1,0 +1,29 @@
+.body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: 713;
+  transition: color 0.7s;
+}
+
+.nav-link:hover {
+  color: crimson;
+}
+
+.carousel-item {
+  height: calc(100vh - 126px);
+}
+
+.carousel-caption p {
+  color: #35363A;
+}
+
+.carousel-caption h5 {
+  color: crimson;
+}
+
+.carousel-item button {
+  width: 200px;
+}
