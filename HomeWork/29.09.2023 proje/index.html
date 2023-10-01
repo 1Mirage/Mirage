@@ -19,47 +19,54 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
-    <!-- BAŞLIK -->
-    <!-- BAŞLIK -->
-    <!-- BAŞLIK -->
-
+  <body id="body">
     <nav class="navbar navbar-expand-lg bg-body-secondary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
             src="./img/logo-volvo.jpg"
-            class="rounded-circle"
+            class="rounded-circle m-3"
             alt=""
             width="100px"
-        /></a>
+          />
+          P1800</a
+        >
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav ms-auto p-3">
-            <a class="nav-link mx-2 active" aria-current="page" href="#"
-              >P1800</a
-            >
-            <a class="nav-link mx-2" href="#">Group</a>
-            <a class="nav-link mx-2" href="#">Cars</a>
-            <a class="nav-link mx-2" href="#">World of</a>
-            <a class="nav-link mx-2" href="#">Construction</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto p-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Group</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">World of</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Construction</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+
     <!-- SLIDER -->
+
     <!-- SLIDER -->
+
     <!-- SLIDER -->
+
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -204,7 +211,7 @@
       <!--todo sonraki -->
       <!--todo sonraki -->
       <!--todo sonraki -->
-      <section class="container bg-body-secondary p-5">
+      <section class="container bg-success p-5">
         <h2 class="text-danger text-center display-6">HISTORY</h2>
         <div class="row justify-content-center row-gap-3 column-gap-1">
           <div class="card p-2 col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
@@ -318,34 +325,32 @@
 
       <!--todo sonraki -->
       <!--todo sonraki -->
-      <!--todo sonraki -->
-
-      <section class="container bg-body-secondary">
+      <section class="container bg-dark p-3">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link"
+              class="nav-link active"
               id="pills-external-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-external"
               type="button"
               role="tab"
               aria-controls="pills-external"
-              aria-selected="false"
+              aria-selected="true"
             >
               External
             </button>
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active"
+              class="nav-link"
               id="pills-interior-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-interior"
               type="button"
               role="tab"
               aria-controls="pills-interior"
-              aria-selected="true"
+              aria-selected="false"
             >
               Interior
             </button>
@@ -365,7 +370,7 @@
             </button>
           </li>
         </ul>
-        <div class="tab-engine" id="pills-tabengine">
+        <div class="tab-content" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
             id="pills-external"
@@ -470,7 +475,106 @@
           </div>
         </div>
       </section>
+      <!--todo sonraki -->
+
+      <!--***************** CONTACT *********** -->
+      <!--***************** CONTACT *********** -->
+
+      <!--***************** CONTACT *********** -->
+      <!--***************** CONTACT *********** -->
+
+      <!--***************** CONTACT *********** -->
+      <!--***************** CONTACT *********** -->
+
+      <section id="contact" class="container text-center bg-body-secondary p-3">
+        <h2 class="text-danger display-6">Contact us</h2>
+        <article id="form">
+          <p>VAK building Gunnar Engellaus väg 8, Göteborg, Sweden</p>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <i class="fas fa-phone fa-2x text-danger"></i>
+              <h5 class="my-2">Telephone</h5>
+              <a href="#">46-(0)31-59 00 00</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp fa-2x text-danger"></i>
+              <h5 class="my-2">WhatsApp</h5>
+              <a href="#">46-(0)31-59 00 00</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope fa-2x text-danger"></i>
+              <h5 class="my-2">E-mail</h5>
+              <a href="#">codeofconduct@volvocars.com</a>
+            </div>
+          </div>
+        </article>
+
+        <form class="row g-3 mt-3">
+          <div class="col-md-6">
+            <input
+              placeholder="Enter Name"
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              placeholder="Enter E-mail"
+              type="password"
+              class="form-control"
+              id="inputPassword4"
+            />
+          </div>
+          <div class="col-12">
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Enter Subject"
+            />
+          </div>
+          <div class="mb-3">
+            <textarea
+              placeholder="Enter your comments"
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-danger px-5">Sign in</button>
+          </div>
+        </form>
+
+        <article id="location" class="mt-4 p-3 bg-warning">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2130.4639670700853!2d11.8506875!3d57.725562499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s9F9HPVG2%2B67!5e0!3m2!1str!2str!4v1696184901229!5m2!1str!2str"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+      </section>
     </main>
+    <!-- *******  FOOTER  ******** -->
+    <footer class="bg-dark text-light text-center p-4">
+      <article class="p-2">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </article>
+      <article>© 2023 Copyright by SoLMaZ Group’s</article>
+    </footer>
+
+    <!-- *****  UP-BUTTON  ***** -->
+    <a class="btn-up" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
     <script src="./lib/fslightbox.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
